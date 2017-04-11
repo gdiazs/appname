@@ -7,7 +7,8 @@ var webjars = {
 	},
 
 	path : function(webjarid, path) {
-		var scriptToLoad = '../../webjars/' + webjarid + '/'+ webjars.versions[webjarid] + '/' + path;
+		var scriptToLoad = '../../webjars/' + webjarid + '/'
+				+ webjars.versions[webjarid] + '/' + path;
 		console.log("loading: " + scriptToLoad + ".js")
 		return scriptToLoad;
 	}
@@ -17,15 +18,14 @@ var webjars = {
 var components = {
 
 	path : function(componentName, scriptName) {
-		var scriptToLoad = 'components/' + componentName + '/'
-				+ scriptName;
+		var scriptToLoad = 'components/' + componentName + '/' + scriptName;
 		console.log("loading component: " + scriptToLoad + ".js")
 		return scriptToLoad;
 	}
 };
 
 require.config({
-	baseUrl : "/resources/js/",
+	baseUrl : "./resources/js/",
 
 	paths : {
 
@@ -43,10 +43,9 @@ require.config({
 			exports : 'jquery',
 		},
 
-
 	}
 
 });
 
 //Boots the app
-require([ 'app' ]);
+require([ 'App' ]);

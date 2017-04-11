@@ -5,8 +5,10 @@ define(function(require) {
 	//imports
 	var React = require('react');
 	var ReacDOM = require('reactDOM');
-	var HomeComponent = require('components/home/HomeComponent');
+	var IndexComponent = require('components/shared/Index');
 
-	ReacDOM.render(React.createElement(HomeComponent), document
+	ReacDOM.render(React.createElement(IndexComponent), document
 			.getElementById('root'));
+	
+	
 });
