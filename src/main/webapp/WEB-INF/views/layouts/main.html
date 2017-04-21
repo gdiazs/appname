@@ -8,6 +8,10 @@
 	<link rel="stylesheet" type="text/css"
 		th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
 		href="webjars/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+	<link rel="stylesheet" type="text/css"
+		th:href="@{/resources/css/app.css}"
+		>
 </th:block>
 </head>
 <body>
@@ -35,11 +39,14 @@
 	</nav>
 
 	<div th:fragment="footer"></div>
+	
 	<th:block th:fragment="javascript">
-		<script type="text/javascript" th:data-main="@{/resources/js/config}"
-			th:src="@{/webjars/babel/5.8.38/browser.min.js}"></script>
-		<script type="text/javascript" th:data-main="@{/resources/js/config}"
+			
+
+			
+		<script type="text/javascript" th:data-main="@{/resources/js/main}"
 			th:src="@{/webjars/requirejs/2.3.3/require.min.js}"></script>
+			
 			
 	</th:block>
 

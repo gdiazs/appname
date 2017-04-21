@@ -7,8 +7,9 @@
 <th:block th:replace="layouts/main :: style"></th:block>
 </head>
 <body>
-
-	<div id="root"></div>
+	<div ng-app='mainApp'>
+		<main-app></main-app>
+	</div>
 	<th:block th:replace="layouts/main :: javascript"></th:block>
 </body>
 </html>
